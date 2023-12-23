@@ -7,6 +7,7 @@ import {
 import { callSwitchBotApi } from './SwitchBotApi';
 import { Device } from './models';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function updateTemperatureAndHumidityData(): void {
     const spreadsheet = getSpreadsheet();
     const devices = getDevices(spreadsheet);
@@ -21,4 +22,3 @@ function updateTemperatureAndHumidityData(): void {
         }
     });
 }
-updateTemperatureAndHumidityData();
